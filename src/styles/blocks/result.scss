@@ -1,0 +1,14 @@
+.result {
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #000;
+   background-color: #e6e6e6;
+   margin: 40px 0;
+   padding: 20px;
+
+   &__title {
+      font-size: 24px;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 25px;
+   }
+}

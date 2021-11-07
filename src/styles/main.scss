@@ -1,0 +1,15 @@
+/* Base */
+@import "base/mixin";
+@import "base/global";
+
+/* Libs */
+@import "./../../node_modules/swiper/swiper";
+
+/* Partials */
+@import "partials/button";
+
+/* Blocks */
+@import "blocks/sort-page";
+@import "blocks/sort-block";
+@import "blocks/step";
+@import "blocks/result";

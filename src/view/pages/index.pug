@@ -1,0 +1,38 @@
+extends ../layouts/default
+
+block vars
+   -
+      const page = {
+         title: 'Bubble Sort'
+      };
+
+block main
+   .sort-page
+      .container
+         .sort-page__title Визуализация сортировки целых чисел
+         .sort-page__subtitle Привет! <br> Перед тобой визуализатор сортировки чисел, следуй инструкциям и в конце получишь наглядное представление процесса сортировки.
+         .sort-page__slider.js-step-slider.swiper-container
+            .swiper-wrapper
+               .step.swiper-slide
+                  .step__text Для начала укажи, сколько будет элементов и нажми на кнопку "Create list!"
+                     br
+                     span (принимаются значения от 1 до 10 включительно)
+                  form.step__nav
+                     label.step__field
+                        input.js-length(type='text', placeholder='10')
+                     button.button.step__create-btn Create list!
+               .step.swiper-slide
+                  .step__text Отлично! Теперь давай запустим процесс сортировки! Для возврата на предыдущий экран нажми кнопку "To Start!"
+                     br
+                     span  (по умолчанию используется сортировка чисел в порядке возрастания, чтобы отсортировать по убыванию, отметь соответствующее поле)
+                  .result
+                     .result__title Сгенерированный список - <span class="js-source-list"></span>
+                     .sort-block
+                  form.step__nav
+                     label.step__field
+                        input.js-order(type='checkbox')
+                        b
+                        span По убыванию
+                     button.button.step__sort-btn Sort!
+                     button.button.step__start.hide-down To Start!
+

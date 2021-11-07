@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Bubble Sort</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="sort-page">
+        <div class="container">
+          <div class="sort-page__title">Визуализация сортировки целых чисел</div>
+          <div class="sort-page__subtitle">Привет! <br> Перед тобой визуализатор сортировки чисел, следуй инструкциям и в конце получишь наглядное представление процесса сортировки.</div>
+          <div class="sort-page__slider js-step-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="step swiper-slide">
+                <div class="step__text">Для начала укажи, сколько будет элементов и нажми на кнопку "Create list!"<br><span>(принимаются значения от 1 до 10 включительно)</span></div>
+                <form class="step__nav">
+                  <label class="step__field">
+                    <input class="js-length" type="text" placeholder="10">
+                  </label>
+                  <button class="button step__create-btn">Create list!</button>
+                </form>
+              </div>
+              <div class="step swiper-slide">
+                <div class="step__text">Отлично! Теперь давай запустим процесс сортировки! Для возврата на предыдущий экран нажми кнопку "To Start!"<br><span> (по умолчанию используется сортировка чисел в порядке возрастания, чтобы отсортировать по убыванию, отметь соответствующее поле)</span></div>
+                <div class="result">
+                  <div class="result__title">Сгенерированный список - <span class="js-source-list"></span></div>
+                  <div class="sort-block"></div>
+                </div>
+                <form class="step__nav">
+                  <label class="step__field">
+                    <input class="js-order" type="checkbox"><b></b><span>По убыванию</span>
+                  </label>
+                  <button class="button step__sort-btn">Sort!</button>
+                  <button class="button step__start hide-down">To Start!</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="js/main.js" type="text/javascript"></script>
+</html>
